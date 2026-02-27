@@ -78,21 +78,13 @@ h2{color:#c084fc}
     margin-top:10px;
 }
 
-/* mouse glow */
-.glow{
-    position:fixed;
-    width:250px;
-    height:250px;
-    background:radial-gradient(circle,#a855f755,transparent);
-    pointer-events:none;
-    transform:translate(-50%,-50%);
-}
+
+
 </style>
 </head>
 
 <body>
 
-<div class="glow" id="glow"></div>
 
 <div class="container">
 
@@ -122,11 +114,7 @@ h2{color:#c084fc}
 </div>
 
 <script>
-const glow=document.getElementById("glow");
-document.addEventListener("mousemove",(e)=>{
-    glow.style.left=e.pageX+"px";
-    glow.style.top=e.pageY+"px";
-});
+
 </script>
 
 </body>
